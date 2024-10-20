@@ -16,6 +16,6 @@ func main() {
 	fmt.Println("O valor de x é " + xs)
 	fmt.Println("O valor de x é ", x)
 
-	fmt.Printf("O valor de x é %f", x)
+	fmt.Printf("O valor de x é %.2f.", x)
 
 }
