@@ -42,7 +42,8 @@ func main() {
 	//Se err não for nil, significa que a conversão falhou
 	if err != nil {
 		fmt.Println("Erro ao converter:", err)
-		return //encerra a execução da função atual, evitando que a próxima instrução seja executada, já que o erro foi encontrado.
+		//encerra a execução da função atual, evitando que a próxima instrução seja executada, já que o erro foi encontrado.
+		return
 	}
 
 	if b {
