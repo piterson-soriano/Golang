@@ -38,17 +38,22 @@ func main() {
 	// Imprime o tipo da variável b
 	fmt.Println("O byte é", reflect.TypeOf(b))
 
-	//com sinal
+	//define a variável valorMax e a atribui ao maior valor que um inteiro de 64 bits pode ter.
+	//isso é útil quando você precisa trabalhar com limites de valores em cálculos ou comparações
 	valorMax := math.MaxInt64
+
 	// Imprime o valor máximo de int
 	fmt.Println("O valor máximo de int é", valorMax)
 	// Imprime o tipo da variável valorMax
 	fmt.Println("O tipo de valor máximo é", reflect.TypeOf(valorMax))
 
-	// Declara uma variável i2 do tipo rune e atribui o valor 'a'
+	// Declara uma variável chamada i2 do tipo rune e atribui o valor 'a'
+	//O tipo da variável é rune, que em Go é um alias para int32. O tipo rune é usado para representar caracteres Unicode.
 	var i2 rune = 'a'
+
 	// Imprime o tipo da variável i2
 	fmt.Println("O rune é", reflect.TypeOf(i2))
+
 	// Imprime o valor da variável i2
 	fmt.Println("rune", i2)
 
