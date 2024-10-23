@@ -8,9 +8,11 @@ import (
 
 func main() {
 	const PI float64 = 3.1415
+	//Nome da variavel raio atribuindo 3.2 na variável.
 	var raio = 3.2 //tipo (float64) inferido pelo compilador
 
 	//forma reduzida de ciar uma var
+	//m.Pow refere-se à função Pow do pacote math
 	area := PI * m.Pow(raio, 2)
 	f.Println("A área da circunsferência é ", area)
 

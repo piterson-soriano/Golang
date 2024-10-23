@@ -10,6 +10,6 @@ func somar(a int, b int) int {
 
 // Função imprimir recebe um inteiro e imprime seu valor no console
 func imprimir(valor int) {
-	// Utiliza a função Println do pacote fmt para exibir o valor
+	// Utiliza a função Println do pacote fmt para exibir o valor.
 	fmt.Println(valor)
 }
