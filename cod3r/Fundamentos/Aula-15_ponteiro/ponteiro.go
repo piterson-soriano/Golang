@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	i := 1
 
 	// GO não permite operações matemáticas diretamente em ponteiros
