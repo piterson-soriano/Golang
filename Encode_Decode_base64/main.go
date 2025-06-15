@@ -1,21 +1,3 @@
-/*
-Requisitos Funcionais:
-
-1 - O programa deve iniciar perguntando ao usuário se deseja realizar um encode ou um decode.
-2 - Caso o usuário opte por encode:
-- Solicitar dois valores de entrada: PV e Token.
-- Concatenar os valores no formato "PV:Token".
-- Aplicar a codificação Base64 na string resultante.
-- Exibir o valor codificado ao usuário.
-3 - Caso o usuário opte por decode:
-- Solicitar ao usuário um código Base64 previamente gerado.
-- Realizar a decodificação do dado fornecido.
-- Exibir a informação original recuperada.
-4 - O programa deve operar dentro de um loop, permitindo que o usuário realize múltiplos processos de codificação e decodificação.
-5 - Ao final de cada operação, perguntar ao usuário se deseja realizar um novo encode/decode.
-Se a resposta for negativa, o programa deve encerrar a execução com uma mensagem final.
-*/
-
 package main
 
 import (
