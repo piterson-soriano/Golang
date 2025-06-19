@@ -18,4 +18,5 @@ func main() {
 	}
 	// Chama a função sub com os valores 2 e 3, e imprime o resultado: -1
 	fmt.Println(sub(2, 3))
+
 }
