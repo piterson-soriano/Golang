@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*ponteiros são usados para armazenar o endereço de memória de uma variável,
+permitindo acessar e modificar diretamente o valor dessa variável fora do
+seu escopo original (por exemplo, dentro de funções).*/
+
 func inc1(n int) {
 	n++ // é o mesmo que n = n + 1
 }
