@@ -4,17 +4,21 @@ import "fmt"
 
 func main() {
 	name := getName()
-	idade := 39.000
-	fmt.Println("Oi! ", name, idade)
+	idade := 39.0
+	fmt.Println("Oi!", name, idade)
 
+	salarioAtual := 100
+	bonus := 20
+	novoSalario := addSalary(salarioAtual, bonus)
+	fmt.Println("Novo salário:", novoSalario)
 }
 
-func nome(name string) {
-	fmt.Println("Oi", name)
-
+// Função que retorna uma string
+func getName() string {
+	return "Piterson"
 }
 
-//int fora do parênteses, retorna um int
+// Função que retorna um int (salário + bônus)
 func addSalary(valorAtual int, bonus int) int {
-
+	return valorAtual + bonus
 }

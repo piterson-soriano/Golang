@@ -2,33 +2,27 @@ package main
 
 import "fmt"
 
+/*
+	Declarano uma Variável. Define variavel name do tipo string
+		var name string
+
+	Outro exemplo de declaração de variável
+		name, idade := "Pit", 39
+
+*/
+
 func main() {
-	/*
-		Declarano uma Variável. Define variavel name do tipo string
-			var name string
-
-		Outro exemplo de declaração de variável
-			name, idade := "Pit", 39
-
-	*/
-
 	name, salario := "Pit", 100
 	setName(name)
-	//Adiciona mais "R$10.00"
-	newSalary, bonus := addSalary(salario, 10)
+
+	// Corrigido: usa a função que retorna dois valores
+	newSalary, bonus := addSalaryP(salario, 10)
 	fmt.Println("Novo salário: ", newSalary)
 	fmt.Println("Bonus: ", bonus)
-
 }
 
 func setName(name string) {
 	fmt.Println("Nome: ", name)
-}
-
-func addSalary(p Pessoa, bonus int) {
-	//o comando p.salario = p.salario + bonus é o mesmo que o comando da linha abaixo
-	p.salario += bonus
-
 }
 
 // int int é retornado dois valores compostos
