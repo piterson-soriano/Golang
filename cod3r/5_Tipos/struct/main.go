@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 /*
-Structs são tipos de dados compostos em Go que permitem agrupar diferentes tipos de dados sob um mesmo nome. Elas são úteis para:
+Structs são tipos de dados compostos em Go que permitem agrupar diferentes tipos de dados sob um mesmo nome.
+Elas são úteis para:
 
 Organizar dados: Em vez de lidar com várias variáveis separadas, você agrupa tudo em uma única estrutura.
 Representar entidades do mundo real: Como "produto", "carro", "aluno", etc.
