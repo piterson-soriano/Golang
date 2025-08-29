@@ -2,11 +2,15 @@ package main
 
 import "fmt"
 
+// Define um novo tipo chamado nota, baseado no tipo float64.
 type nota float64
 
+//Método associado ao tipo nota que verifica se o valor está entre dois limites
 func (n nota) entre(inicio, fim float64) bool {
 	return float64(n) >= inicio && float64(n) <= fim
 }
+
+//Método que converte uma nota para conceito (A, B, C, D ou E)
 func notaParaConceito(n nota) string {
 	if n.entre(9.0, 10.0) {
 		return "A"
@@ -21,6 +25,7 @@ func notaParaConceito(n nota) string {
 	}
 }
 
+//Função principal que executa o programa.
 func main() {
 	fmt.Println(notaParaConceito(9.8))
 	fmt.Println(notaParaConceito(6.9))
