@@ -18,4 +18,10 @@ func main() {
 	p1 := produto{1, "Notebook", 1899.00, []string{"Promoção", "Eletrônico"}}
 	p1Json, _ := json.Marshal(p1)
 	fmt.Println(string(p1Json))
+
+	//json para struct
+	var p2 produto
+	jsonString := `{"id":2,"nome":"Caneta","preco":8.90,"tags":["Papelaria","importado"]}`
+	json.Unmarshal([]byte(jsonString), &p2)
+	fmt.Println(p2.Tags[1])
 }
