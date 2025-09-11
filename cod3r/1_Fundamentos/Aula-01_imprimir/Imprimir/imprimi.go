@@ -8,6 +8,3 @@ func main() {
 	fmt.Println("Teste em go")
 
 }
-
-
-fmt.Printf("Teste ")
