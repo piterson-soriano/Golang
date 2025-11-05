@@ -19,7 +19,7 @@ func titulo(urls ...string) <-chan string { // canal somente leitura
 			resp, _ := http.Get(url)
 			html, _ := io.ReadAll(resp.Body)
 
-			r, _ := regexp.Compile("<title>(.*?)<\\/title>")
+			r, _ := regexp.Compile("<title>(.*?)<\\/title>") //converte para string
 			c <- r.FindStringSubmatch(string(html))[1]
 		}(url)
 	}
